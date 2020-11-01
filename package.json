@@ -10,14 +10,17 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxt/components": "^1.1.1",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.17.3",
     "core-js": "^3.6.5",
     "file-system": "^2.2.2",
     "fs-extra": "^9.0.1",
     "fsevents": "^1.2.4",
+    "nicescroll": "^3.7.4",
     "node-loader": "^1.0.2",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "vue-perfect-scrollbar": "^0.2.1"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.0.0",

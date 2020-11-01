@@ -34,6 +34,7 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     '@nuxtjs/style-resources',
+    '@nuxt/components',
   ],
 
   externals: {
@@ -53,7 +54,6 @@ export default {
       config.node = {
         fs: 'empty',
       }
-
       if (isDev && isClient) {
         config.module.rules.push({
           test: /\.scss$/,
