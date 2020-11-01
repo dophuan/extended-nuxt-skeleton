@@ -20,6 +20,7 @@
     "nicescroll": "^3.7.4",
     "node-loader": "^1.0.2",
     "nuxt": "^2.14.6",
+    "sass-resources-loader": "^2.1.1",
     "vue-perfect-scrollbar": "^0.2.1"
   },
   "devDependencies": {
@@ -27,6 +28,7 @@
     "@vue/test-utils": "^1.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^26.5.0",
+    "child_process": "^1.0.2",
     "fibers": "^4.0.3",
     "jest": "^26.5.0",
     "node-sass": "^4.14.1",
@@ -41,5 +43,8 @@
     "test": "test"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "browser": {
+    "child_process": false
+  }
 }

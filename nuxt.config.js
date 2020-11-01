@@ -16,7 +16,10 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
+  css: [
+    'sass-resources-loader',
+    '@/scss/base.scss'
+  ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
@@ -41,25 +44,31 @@ export default {
     fsevents: "require('fsevents')"
   },
 
-  // styleResources: {
-  //   scss: [
-  //     '~/scss/base.scss',
-  //   ]
-  // },
-
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     extend (config, { isDev, isClient }) {
 
       config.node = {
         fs: 'empty',
+        child_process: "empty",
       }
       if (isDev && isClient) {
+        // config.module.rules.push({
+        //   test: /\.scss$/,
+        //   loader: ['sass-loader'],
+        //   exclude: /(node_modules)/
+        // });
+
         config.module.rules.push({
           test: /\.scss$/,
-          loader: ['sass-loader'],
+          loader: 'sass-resources-loader',
+          options: {
+            resources: './scss/base.scss',
+          },
           exclude: /(node_modules)/
         });
+
+
         config.module.rules.push({
           test: /\.node$/,
           loader: ['node-loader'],
