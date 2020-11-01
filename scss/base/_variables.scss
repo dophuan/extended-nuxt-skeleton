@@ -1,0 +1,93 @@
+// ============
+// Application variables
+// NOTE: Update according to the theme
+// ============
+
+$color-dark-green: #297E7F;
+$color-light-green: #BEE3DB;
+$color-orange: #F45C44;
+$color-white: #FFFFFF;
+$color-dark-white: #FDFDFF;
+$color-black: #000000;
+$color-light-black: #1F2421;
+$color-light-gray: #F8F8F8;
+$color-gray: #E0E0E0;
+$color-medium-gray: #E5E5E5;
+$color-dark-gray: #818D92;
+$color-dark-brown: #3F3F3F;
+$color-dark-red: #B80000;
+$color-blue: #243395;
+$color-dark-blue: #1A256B;
+
+
+$color-primary: $color-dark-green;
+$color-secondary: $color-orange;
+$color-text:  $color-light-black;
+$color-heading:  $color-light-black;
+$color-link: $color-dark-green;
+$color-dark: $color-black;
+$color-error: $color-dark-red;
+
+$font-family: 'Roboto', sans-serif;
+
+$font-bold: 700;
+$font-semibold: 500;
+
+$z-index-header: 1020;
+$z-index-nav-sp: $z-index-header + 2;
+$z-index-loading: 1000;
+$z-index-modal: 1030;
+$z-index-overlay: $z-index-header + 1;
+$z-index-toast: 1040;
+
+$border-radius-button: .6rem;
+$border-radius-card: 16px;
+
+$header-height-desktop: 80px;
+$footer-height-desktop: 100px;
+$footer-height-mobile: 80px;
+
+// ============
+// Bootstrap 4 variables
+// ============
+$font-size-base: 1.65rem;
+
+$grid-gutter-width: 30px;
+$grid-padding: $grid-gutter-width / 2;
+
+$grid-columns: 12;
+
+// default breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (
+  xl: unset
+) !default;
+
+// Bootstrap colors
+$primary: $color-dark-green;
+$brand: $color-orange;
+$secondary: $color-orange;
+$danger: $color-dark-red;
+$light: $color-light-gray;
+$info: $color-light-green;
+
+$theme-colors: (
+  "brand": $brand,
+  "info": $info,
+);
+
+// ============
+// END Bootstrap 4 variables
+// ============
+$breakpoint-xs: 0;
+$breakpoint-sm: map-get($grid-breakpoints, "sm");
+$breakpoint-md: map-get($grid-breakpoints, "md");
+$breakpoint-lg: map-get($grid-breakpoints, "lg");
+$breakpoint-xl: map-get($grid-breakpoints, "xl");

@@ -1,0 +1,46 @@
+%font-heading {
+  @include open-sans();
+}
+
+%font-text {
+  @include roboto();
+  font-size: 14px;
+}
+
+%h1 {
+  @include font-styling(normal, bold, 45px, 66px);
+
+  @include mobile() {
+    @include font-styling(normal, bold, 55px, 66px);
+  }
+}
+
+%h2 {
+  @include font-styling(normal, bold, 18px, 25px);
+
+  @include mobile() {
+    @include font-styling(normal, bold, 18px, 25px);
+  }
+}
+
+%h3 {
+  @include font-styling(normal, 600, 16px, 22px);
+
+  @include mobile() {
+    font-size: 20px;
+  }
+}
+
+%h4 {
+  font-size: 14px;
+  line-height: 1;
+}
+
+%h5 {
+  font-size: 14px;
+  line-height: 1;
+}
+
+%p {
+  @include font-styling(normal, 400, 16px, 19px);
+}

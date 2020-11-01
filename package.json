@@ -1,0 +1,42 @@
+{
+  "name": "autobiz",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.17.3",
+    "core-js": "^3.6.5",
+    "file-system": "^2.2.2",
+    "fs-extra": "^9.0.1",
+    "fsevents": "^1.2.4",
+    "node-loader": "^1.0.2",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@vue/test-utils": "^1.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^26.5.0",
+    "fibers": "^4.0.3",
+    "jest": "^26.5.0",
+    "node-sass": "^4.14.1",
+    "readline": "^1.3.0",
+    "sass": "^1.28.0",
+    "sass-loader": "^10.0.4",
+    "vue-jest": "^3.0.4"
+  },
+  "description": "## Build Setup",
+  "main": "nuxt.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}

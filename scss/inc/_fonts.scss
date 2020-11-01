@@ -1,0 +1,15 @@
+@include make-font-face-ready();
+
+[class^='icon-'],
+[class*=' icon-'] {
+	@include font-icon();
+	font-size: 23px;
+}
+
+// Make classes
+@each $name, $icon in $icons {
+	.icon-#{$name}:before {
+		@include font-icon();
+		content: $icon;
+	}
+}

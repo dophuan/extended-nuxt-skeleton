@@ -1,0 +1,26 @@
+.btn {
+  min-width: 200px;
+  border-width: 2px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  border-radius: 3px;
+}
+
+.btn-large {
+  padding: 16px 0;
+}
+
+.btn-medium {
+  padding: 5px 0;
+}
+
+.btn-small {
+  padding: 3px 0;
+}
+
+.btn-primary {
+  &:focus {
+    color: white;
+  }
+}
